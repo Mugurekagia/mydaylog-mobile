@@ -146,15 +146,6 @@ export default function Login() {
         >
           <Text style={styles.registerBtnText}>Create an Account</Text>
         </TouchableOpacity>
-
-        {/* DEMO BUTTON - remove after presentation */}
-        <TouchableOpacity
-          style={styles.demoBtn}
-          onPress={() => router.replace("/drawer/Dashboard")}
-          activeOpacity={0.8}
-        >
-          <Text style={styles.demoBtnText}>👀 Demo Mode</Text>
-        </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>
   );
@@ -330,20 +321,6 @@ const styles = StyleSheet.create({
   },
   registerBtnText: {
     color: THEME.primary,
-    fontSize: 15,
-    fontWeight: "600",
-  },
-  demoBtn: {
-    width: "100%",
-    borderRadius: 12,
-    height: 50,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#f0f0f0",
-    marginTop: 10,
-  },
-  demoBtnText: {
-    color: THEME.textLight,
     fontSize: 15,
     fontWeight: "600",
   },
